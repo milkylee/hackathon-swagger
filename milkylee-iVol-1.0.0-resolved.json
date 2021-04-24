@@ -1,0 +1,120 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Hack",
+    "version": "1.0.0",
+    "title": "Hackathon"
+  },
+  "host": "hackathon.nucleiotechnologies.com",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/treasure-volunteers": {
+      "get": {
+        "tags": [
+          "Treasure"
+        ],
+        "summary": "Get list of treasure volunteers",
+        "operationId": "treasure",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/time-volunteers": {
+      "get": {
+        "tags": [
+          "Time"
+        ],
+        "summary": "Get list of time volunteers",
+        "operationId": "time",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/participants": {
+      "get": {
+        "tags": [
+          "Participants"
+        ],
+        "summary": "Get list of participants",
+        "operationId": "participants",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/users": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get list of users",
+        "operationId": "users",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}
